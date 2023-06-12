@@ -75,10 +75,10 @@
                 }
               ]
             }
-            // Plus de Pokemon ici...
+
           ]
         }
-        // Plus de générations ici...
+
       ],
       "categories": [
         {
@@ -90,61 +90,67 @@
         {
           "nomCat": "Tiny Turtle"
         }
-        // Plus de catégories ici...
+
       ],
       "types": [
         {
           "nomType": "Grass",
           "force": [
             {
-              "nomAtt": "Vine Whip",
-              "puissance": 45
+              "nomType": "Water"
+            },
+            {
+              "nomType": "Ground"
             }
-            // Plus d'attaques ici...
           ],
           "faiblesse": [
             {
-              "nomAtt": "Ember",
-              "puissance": 40
+              "nomType": "Fire"
+            },
+            {
+              "nomType": "Flying"
             }
-            // Plus d'attaques ici...
           ]
         },
         {
           "nomType": "Fire",
           "force": [
             {
-              "nomAtt": "Ember",
-              "puissance": 40
+              "nomType": "Grass"
+            },
+            {
+              "nomType": "Ice"
             }
-            // Plus d'attaques ici...
           ],
           "faiblesse": [
             {
-              "nomAtt": "Water Gun",
-              "puissance": 40
+              "nomType": "Water"
+            },
+            {
+              "nomType": "Rock"
             }
-            // Plus d'attaques ici...
           ]
         },
         {
           "nomType": "Water",
           "force": [
             {
-              "nomAtt": "Water Gun",
-              "puissance": 40
+              "nomType": "Fire"
+            },
+            {
+              "nomType": "Rock"
             }
-            // Plus d'attaques ici...
           ],
           "faiblesse": [
             {
-              "nomAtt": "Vine Whip",
-              "puissance": 45
+              "nomType": "Grass"
+            },
+            {
+              "nomType": "Electric"
             }
-            // Plus d'attaques ici...
           ]
         }
-        // Plus de types ici...
+
       ],
       "attaques": [
         {
@@ -167,8 +173,9 @@
           "nomAtt": "Water Gun",
           "puissance": 40
         }
-        // Plus d'attaques ici...
+
       ]
     }
   ]
 }
+
