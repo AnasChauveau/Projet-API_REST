@@ -14,3 +14,6 @@ router.get('/pokemons', (req, res) => {
 });
 
 module.exports = router;
+
+
+
