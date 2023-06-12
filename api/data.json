@@ -1,0 +1,174 @@
+{
+  "Pokedex": [
+    {
+      "generations": [
+        {
+          "nomGen": "Generation I",
+          "region": "Kanto",
+          "pokemons": [
+            {
+              "numPokedex": 1,
+              "nom": "Bulbasaur",
+              "categorie": {
+                "nomCat": "Seed"
+              },
+              "types": [
+                {
+                  "nomType": "Grass"
+                },
+                {
+                  "nomType": "Poison"
+                }
+              ],
+              "attaques": [
+                {
+                  "nomAtt": "Tackle",
+                  "puissance": 40
+                },
+                {
+                  "nomAtt": "Vine Whip",
+                  "puissance": 45
+                }
+              ]
+            },
+            {
+              "numPokedex": 4,
+              "nom": "Charmander",
+              "categorie": {
+                "nomCat": "Lizard"
+              },
+              "types": [
+                {
+                  "nomType": "Fire"
+                }
+              ],
+              "attaques": [
+                {
+                  "nomAtt": "Scratch",
+                  "puissance": 40
+                },
+                {
+                  "nomAtt": "Ember",
+                  "puissance": 40
+                }
+              ]
+            },
+            {
+              "numPokedex": 7,
+              "nom": "Squirtle",
+              "categorie": {
+                "nomCat": "Tiny Turtle"
+              },
+              "types": [
+                {
+                  "nomType": "Water"
+                }
+              ],
+              "attaques": [
+                {
+                  "nomAtt": "Tackle",
+                  "puissance": 40
+                },
+                {
+                  "nomAtt": "Water Gun",
+                  "puissance": 40
+                }
+              ]
+            }
+            // Plus de Pokemon ici...
+          ]
+        }
+        // Plus de générations ici...
+      ],
+      "categories": [
+        {
+          "nomCat": "Seed"
+        },
+        {
+          "nomCat": "Lizard"
+        },
+        {
+          "nomCat": "Tiny Turtle"
+        }
+        // Plus de catégories ici...
+      ],
+      "types": [
+        {
+          "nomType": "Grass",
+          "force": [
+            {
+              "nomAtt": "Vine Whip",
+              "puissance": 45
+            }
+            // Plus d'attaques ici...
+          ],
+          "faiblesse": [
+            {
+              "nomAtt": "Ember",
+              "puissance": 40
+            }
+            // Plus d'attaques ici...
+          ]
+        },
+        {
+          "nomType": "Fire",
+          "force": [
+            {
+              "nomAtt": "Ember",
+              "puissance": 40
+            }
+            // Plus d'attaques ici...
+          ],
+          "faiblesse": [
+            {
+              "nomAtt": "Water Gun",
+              "puissance": 40
+            }
+            // Plus d'attaques ici...
+          ]
+        },
+        {
+          "nomType": "Water",
+          "force": [
+            {
+              "nomAtt": "Water Gun",
+              "puissance": 40
+            }
+            // Plus d'attaques ici...
+          ],
+          "faiblesse": [
+            {
+              "nomAtt": "Vine Whip",
+              "puissance": 45
+            }
+            // Plus d'attaques ici...
+          ]
+        }
+        // Plus de types ici...
+      ],
+      "attaques": [
+        {
+          "nomAtt": "Tackle",
+          "puissance": 40
+        },
+        {
+          "nomAtt": "Vine Whip",
+          "puissance": 45
+        },
+        {
+          "nomAtt": "Scratch",
+          "puissance": 40
+        },
+        {
+          "nomAtt": "Ember",
+          "puissance": 40
+        },
+        {
+          "nomAtt": "Water Gun",
+          "puissance": 40
+        }
+        // Plus d'attaques ici...
+      ]
+    }
+  ]
+}
