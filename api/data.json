@@ -149,31 +149,151 @@
               "nomType": "Electric"
             }
           ]
+        },
+        {
+          "nomType": "Normal",
+          "force": [],
+          "faiblesse": [
+            {
+              "nomType": "Fighting"
+            }
+          ]
+        },
+        {
+          "nomType": "Electric",
+          "force": [
+            {
+              "nomType": "Water"
+            },
+            {
+              "nomType": "Flying"
+            }
+          ],
+          "faiblesse": [
+            {
+              "nomType": "Ground"
+            }
+          ]
+        },
+        {
+          "nomType": "Ice",
+          "force": [
+            {
+              "nomType": "Grass"
+            },
+            {
+              "nomType": "Ground"
+            },
+            {
+              "nomType": "Flying"
+            },
+            {
+              "nomType": "Dragon"
+            }
+          ],
+          "faiblesse": [
+            {
+              "nomType": "Fire"
+            },
+            {
+              "nomType": "Fighting"
+            },
+            {
+              "nomType": "Rock"
+            },
+            {
+              "nomType": "Steel"
+            }
+          ]
+        },
+        {
+          "nomType": "Ghost",
+          "force": [
+            {
+              "nomType": "Psychic"
+            },
+            {
+              "nomType": "Ghost"
+            }
+          ],
+          "faiblesse": [
+            {
+              "nomType": "Ghost"
+            },
+            {
+              "nomType": "Dark"
+            }
+          ]
+        },
+        {
+          "nomType": "Psychic",
+          "force": [
+            {
+              "nomType": "Fighting"
+            },
+            {
+              "nomType": "Poison"
+            }
+          ],
+          "faiblesse": [
+            {
+              "nomType": "Bug"
+            },
+            {
+              "nomType": "Ghost"
+            },
+            {
+              "nomType": "Dark"
+            }
+          ]
         }
-
       ],
       "attaques": [
         {
           "nomAtt": "Tackle",
-          "puissance": 40
+          "puissance": 40,
+          "type": "Normal"
         },
         {
           "nomAtt": "Vine Whip",
-          "puissance": 45
+          "puissance": 45,
+          "type": "Grass"
         },
         {
           "nomAtt": "Scratch",
-          "puissance": 40
+          "puissance": 40,
+          "type": "Normal"
         },
         {
           "nomAtt": "Ember",
-          "puissance": 40
+          "puissance": 40,
+          "type": "Fire"
         },
         {
           "nomAtt": "Water Gun",
-          "puissance": 40
+          "puissance": 40,
+          "type": "Water"
+        },
+        {
+          "nomAtt": "Thunderbolt",
+          "puissance": 90,
+          "type": "Electric"
+        },
+        {
+          "nomAtt": "Ice Beam",
+          "puissance": 90,
+          "type": "Ice"
+        },
+        {
+          "nomAtt": "Shadow Ball",
+          "puissance": 80,
+          "type": "Ghost"
+        },
+        {
+          "nomAtt": "Psychic",
+          "puissance": 90,
+          "type": "Psychic"
         }
-
       ]
     }
   ]
