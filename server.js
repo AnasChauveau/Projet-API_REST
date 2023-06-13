@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 
 // Importer le module pokemon.js
-const pokemonAPI = require('../routes/pokemon');
+const pokemonAPI = require('./routes/pokemon');
 
 // Configurer la route pour le module pokemon
 app.use('/api', pokemonAPI);
