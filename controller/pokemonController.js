@@ -28,7 +28,7 @@
 //   };
 
 
-const pokedex = require('../api/data.json'); // Remplacez ceci par le chemin d'accès à votre fichier JSON
+const pokedex = require('../api/data.json'); 
 
 exports.getAllPokemons = (req, res) => {
     res.json(pokedex.Pokedex[0].generations[0].pokemons);

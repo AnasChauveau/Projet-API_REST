@@ -18,19 +18,10 @@
 
 const express = require('express');
 const app = express();
+const router = require('./routes/routes');
+
 app.use(express.json());
-
-const apiController = require('./controller/apiController');
-
-app.get('/api/pokemons', apiController.getAllPokemons);
-
-app.get('/api/pokemons/:id', apiController.getPokemonById);
-
-app.post('/api/pokemons', apiController.createPokemon);
-
-app.put('/api/pokemons/:id', apiController.updatePokemon);
-
-app.delete('/api/pokemons/:id', apiController.deletePokemon);
+app.use('/api', router);
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
