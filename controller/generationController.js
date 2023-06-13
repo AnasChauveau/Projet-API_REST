@@ -5,8 +5,8 @@ const getGenerations = (req, res) => {
 }
 
 const getGeneration = (req, res) => {
-    const { id } = req.params;
-    const generation = pokedex.Pokedex[0].generations.find(g => g._numGen_ === id);
+    const { nom } = req.params;
+    const generation = pokedex.Pokedex[0].generations.find(g => g.nomGen === nom);
 
     if (!generation) {
         res.status(404).json({ message: `Génération non trouvée.` });

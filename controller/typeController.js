@@ -5,11 +5,11 @@ const getTypes = (req, res) => {
 }
 
 const getType = (req, res) => {
-    const { id } = req.params;
-    const type = pokedex.Pokedex[0].types.find(t => t._nomType_ === id);
+    const { nom } = req.params;
+    const type = pokedex.Pokedex[0].types.find(t => t.nomType === nom);
 
     if (!type) {
-        res.status(404).json({ message: `Le type avec l'ID ${id} non trouvée.` });
+        res.status(404).json({ message: `Le type avec le nom ${nom} non trouvée.` });
     } else {
         res.status(200).json(type);
     }

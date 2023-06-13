@@ -16,22 +16,22 @@ router.delete('/pokemons/:id', pokemonController.deletePokemon);
 
 // Routes pour les Generations
 router.get('/generations', generationController.getGenerations);
-router.get('/generations/:id', generationController.getGeneration);
+router.get('/generations/:nom', generationController.getGeneration);
 
 
 // Routes pour les Categories
 router.get('/categories', categorieController.getCategories);
-router.get('/categories/:id', categorieController.getCategorie);
+router.get('/categories/:nom', categorieController.getCategorie);
 
 
 // Routes pour les Types
 router.get('/types', typeController.getTypes);
-router.get('/types/:id', typeController.getType);
+router.get('/types/:nom', typeController.getType);
 
 
 // Routes pour les Attaques
 router.get('/attaques', attaqueController.getAttaques);
-router.get('/attaques/:id', attaqueController.getAttaque);
+router.get('/attaques/:nom', attaqueController.getAttaque);
 
 
 module.exports = router;

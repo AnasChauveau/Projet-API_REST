@@ -5,11 +5,11 @@ const getAttaques = (req, res) => {
 }
 
 const getAttaque = (req, res) => {
-    const { id } = req.params;
-    const attack = pokedex.Pokedex[0].attaques.find(a => a._nomAtt_ === id);
+    const { nom } = req.params;
+    const attack = pokedex.Pokedex[0].attaques.find(a => a.nomAtt === nom);
 
     if (!attack) {
-        res.status(404).json({ message: `L'attaque avec l'ID ${id} non trouvée.` });
+        res.status(404).json({ message: `L'attaque avec le nom ${nom} non trouvée.` });
     } else {
         res.status(200).json(attack);
     }
