@@ -3,6 +3,7 @@ const router = express.Router();
 const apiController = require('../controller/apiController');
 
 
+router.get('/', apiController.accueil);
 router.get('/pokedex', apiController.pokedex);
 router.get('/pokedex/generations', apiController.generations);
 
