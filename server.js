@@ -21,7 +21,7 @@ const app = express();
 const router = require('./routes/routes');
 
 app.use(express.json());
-app.use('/api', router);
+app.use('/pokedex', router);
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {

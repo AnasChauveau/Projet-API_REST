@@ -1,9 +1,9 @@
 const express = require('express');
 const pokemonController = require('../controller/pokemonController.js');
-// const generationController = require('./controller/generationController');
-// const categoryController = require('./controller/categoryController');
-// const typeController = require('./controller/typeController');
-// const attackController = require('./controller/attackController');
+const generationController = require('../controller/generationController');
+const categorieController = require('../controller/categorieController');
+const typeController = require('../controller/typeController');
+const attaqueController = require('../controller/attaqueController');
 
 const router = express.Router();
 
@@ -14,24 +14,24 @@ router.post('/pokemons', pokemonController.createPokemon);
 router.put('/pokemons/:id', pokemonController.updatePokemon);
 router.delete('/pokemons/:id', pokemonController.deletePokemon);
 
-// // Routes pour les Generations
-// router.get('/generations', generationController.getGenerations);
-// router.get('/generations/:id', generationController.getGeneration);
+// Routes pour les Generations
+router.get('/generations', generationController.getGenerations);
+router.get('/generations/:id', generationController.getGeneration);
 
 
-// // Routes pour les Categories
-// router.get('/categories', categoryController.getCategories);
-// router.get('/categories/:id', categoryController.getCategory);
+// Routes pour les Categories
+router.get('/categories', categorieController.getCategories);
+router.get('/categories/:id', categorieController.getCategorie);
 
 
-// // Routes pour les Types
-// router.get('/types', typeController.getTypes);
-// router.get('/types/:id', typeController.getType);
+// Routes pour les Types
+router.get('/types', typeController.getTypes);
+router.get('/types/:id', typeController.getType);
 
 
-// // Routes pour les Attaques
-// router.get('/attacks', attackController.getAttacks);
-// router.get('/attacks/:id', attackController.getAttack);
+// Routes pour les Attaques
+router.get('/attaques', attaqueController.getAttaques);
+router.get('/attaques/:id', attaqueController.getAttaque);
 
 
 module.exports = router;
