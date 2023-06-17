@@ -77,6 +77,78 @@
             }
 
           ]
+        },
+        {
+          "nomGen": "Generation II",
+          "region": "Johto",
+          "pokemons": [
+            {
+              "numPokedex": 152,
+              "nom": "Chikorita",
+              "categorie": {
+                "nomCat": "Leaf"
+              },
+              "types": [
+                {
+                  "nomType": "Grass"
+                }
+              ],
+              "attaques": [
+                {
+                  "nomAtt": "Tackle",
+                  "puissance": 40
+                },
+                {
+                  "nomAtt": "Razor Leaf",
+                  "puissance": 55
+                }
+              ]
+            },
+            {
+              "numPokedex": 155,
+              "nom": "Cyndaquil",
+              "categorie": {
+                "nomCat": "Fire Mouse"
+              },
+              "types": [
+                {
+                  "nomType": "Fire"
+                }
+              ],
+              "attaques": [
+                {
+                  "nomAtt": "Tackle",
+                  "puissance": 40
+                },
+                {
+                  "nomAtt": "Ember",
+                  "puissance": 40
+                }
+              ]
+            },
+            {
+              "numPokedex": 158,
+              "nom": "Totodile",
+              "categorie": {
+                "nomCat": "Big Jaw"
+              },
+              "types": [
+                {
+                  "nomType": "Water"
+                }
+              ],
+              "attaques": [
+                {
+                  "nomAtt": "Scratch",
+                  "puissance": 40
+                },
+                {
+                  "nomAtt": "Water Gun",
+                  "puissance": 40
+                }
+              ]
+            }
+          ]
         }
 
       ],
@@ -89,6 +161,21 @@
         },
         {
           "nomCat": "Tiny Turtle"
+        },
+        {
+          "nomCat": "Leaf"
+        },
+        {
+          "nomCat": "Fire Mouse"
+        },
+        {
+          "nomCat": "Big Jaw"
+        },
+        {
+          "nomCat": "Head Butt"
+        },
+        {
+          "nomCat": "Mouse"
         }
 
       ],
@@ -246,6 +333,121 @@
               "nomType": "Dark"
             }
           ]
+        },
+        {
+          "nomType": "Bug",
+          "force": [
+            {
+              "nomType": "Grass"
+            },
+            {
+              "nomType": "Psychic"
+            }
+          ],
+          "faiblesse": [
+            {
+              "nomType": "Fire"
+            },
+            {
+              "nomType": "Fighting"
+            },
+            {
+              "nomType": "Poison"
+            },
+            {
+              "nomType": "Flying"
+            },
+            {
+              "nomType": "Ghost"
+            },
+            {
+              "nomType": "Steel"
+            }
+          ]
+        },
+        {
+          "nomType": "Rock",
+          "force": [
+            {
+              "nomType": "Fire"
+            },
+            {
+              "nomType": "Ice"
+            },
+            {
+              "nomType": "Flying"
+            },
+            {
+              "nomType": "Bug"
+            }
+          ],
+          "faiblesse": [
+            {
+              "nomType": "Fighting"
+            },
+            {
+              "nomType": "Ground"
+            },
+            {
+              "nomType": "Steel"
+            }
+          ]
+        },
+        {
+          "nomType": "Ground",
+          "force": [
+            {
+              "nomType": "Fire"
+            },
+            {
+              "nomType": "Electric"
+            },
+            {
+              "nomType": "Poison"
+            },
+            {
+              "nomType": "Rock"
+            },
+            {
+              "nomType": "Steel"
+            }
+          ],
+          "faiblesse": [
+            {
+              "nomType": "Water"
+            },
+            {
+              "nomType": "Grass"
+            },
+            {
+              "nomType": "Ice"
+            }
+          ]
+        },
+        {
+          "nomType": "Flying",
+          "force": [
+            {
+              "nomType": "Grass"
+            },
+            {
+              "nomType": "Fighting"
+            },
+            {
+              "nomType": "Bug"
+            }
+          ],
+          "faiblesse": [
+            {
+              "nomType": "Electric"
+            },
+            {
+              "nomType": "Ice"
+            },
+            {
+              "nomType": "Rock"
+            }
+          ]
         }
       ],
       "attaques": [
@@ -288,6 +490,91 @@
           "nomAtt": "Shadow Ball",
           "puissance": 80,
           "type": "Ghost"
+        },
+        {
+          "nomAtt": "Psychic",
+          "puissance": 90,
+          "type": "Psychic"
+        },
+        {
+          "nomAtt": "Razor Leaf",
+          "puissance": 55,
+          "type": "Grass"
+        },
+        {
+          "nomAtt": "Flamethrower",
+          "puissance": 90,
+          "type": "Fire"
+        },
+        {
+          "nomAtt": "Hydro Pump",
+          "puissance": 110,
+          "type": "Water"
+        },
+        {
+          "nomAtt": "Thunder",
+          "puissance": 110,
+          "type": "Electric"
+        },
+        {
+          "nomAtt": "Blizzard",
+          "puissance": 110,
+          "type": "Ice"
+        },
+        {
+          "nomAtt": "Dark Pulse",
+          "puissance": 80,
+          "type": "Dark"
+        },
+        {
+          "nomAtt": "Dragon Pulse",
+          "puissance": 85,
+          "type": "Dragon"
+        },
+        {
+          "nomAtt": "Earthquake",
+          "puissance": 100,
+          "type": "Ground"
+        },
+        {
+          "nomAtt": "Fire Blast",
+          "puissance": 110,
+          "type": "Fire"
+        },
+        {
+          "nomAtt": "Giga Drain",
+          "puissance": 75,
+          "type": "Grass"
+        },
+        {
+          "nomAtt": "Hyper Beam",
+          "puissance": 150,
+          "type": "Normal"
+        },
+        {
+          "nomAtt": "Hyper Voice",
+          "puissance": 90,
+          "type": "Normal"
+        },
+        {
+          "nomAtt": "Ice Punch",
+          "puissance": 75,
+          "type": "Ice"
+        },
+        {
+          "nomAtt": "Iron Tail",
+          "puissance": 100,
+          "type": "Steel"
+        },
+        {
+          "nomAtt": "Outrage",
+          "puissance": 120,
+          "type": "Dragon"
+        },
+        {
+          "nomAtt": "Poison Jab",
+          "puissance": 80,
+          "type": "Poison"
         },
         {
           "nomAtt": "Psychic",
