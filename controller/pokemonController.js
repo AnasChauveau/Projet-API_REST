@@ -31,7 +31,16 @@
 const pokedex = require('../api/data.json'); 
 
 exports.getAllPokemons = (req, res) => {
-    res.json(pokedex.Pokedex[0].generations[0].pokemons);
+    
+    //res.json(pokedex.Pokedex[0].generations[0].pokemons);
+    let allPokemons = [];
+    
+    pokedex.Pokedex.forEach(pokedexEntry => {
+        pokedexEntry.generations.forEach(generation => {
+            allPokemons = allPokemons.concat(generation.pokemons);
+        });
+    });
+    res.json(allPokemons);
 };
 
 exports.getPokemonById = (req, res) => {
