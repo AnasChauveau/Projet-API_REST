@@ -44,41 +44,68 @@ const getAllPokemons = (req, res) => {
 };
 
 const getPokemonById = (req, res) => {
-    const pokemon = pokedex.Pokedex[0].generations[0].pokemons.find(p => p.numPokedex === parseInt(req.params.id));
-    if (!pokemon) return res.status(404).send('Le pokemon avec l\'ID donné n\'a pas été trouvé.');
+    let pokemon = "";
+    for(let i = 0; i < pokedex.Pokedex[0].generations.length; i++){
+        if(pokedex.Pokedex[0].generations[i].pokemons.find(p => p.numPokedex === parseInt(req.params.id))){
+            pokemon = pokedex.Pokedex[0].generations[i].pokemons.find(p => p.numPokedex === parseInt(req.params.id));
+        }  
+    }
+    if (pokemon == "") return res.status(404).send('Le pokemon avec l\'ID donné n\'a pas été trouvé.');
     res.json(pokemon);
 };
 
 const getTypesByPokemon = (req, res) => {
-    const pokemon = pokedex.Pokedex[0].generations[0].pokemons.find(p => p.numPokedex === parseInt(req.params.id)).types;
-    if (!pokemon) return res.status(404).send('Le pokemon avec l\'ID donné n\'a pas été trouvé.');
+    let pokemon = "";
+    for(let i = 0; i < pokedex.Pokedex[0].generations.length; i++){
+        if(pokedex.Pokedex[0].generations[i].pokemons.find(p => p.numPokedex === parseInt(req.params.id)).types){
+            pokemon = pokedex.Pokedex[0].generations[i].pokemons.find(p => p.numPokedex === parseInt(req.params.id)).types;
+        }  
+    }
+    if (pokemon == "") return res.status(404).send('Le pokemon avec l\'ID donné n\'a pas été trouvé.');
     res.json(pokemon);
 }
 
 const getAttaquesByPokemon = (req, res) => {
-    const pokemon = pokedex.Pokedex[0].generations[0].pokemons.find(p => p.numPokedex === parseInt(req.params.id)).attaques;
-    if (!pokemon) return res.status(404).send('Le pokemon avec l\'ID donné n\'a pas été trouvé.');
+    let pokemon = "";
+    for(let i = 0; i < pokedex.Pokedex[0].generations.length; i++){
+        if(pokedex.Pokedex[0].generations[i].pokemons.find(p => p.numPokedex === parseInt(req.params.id)).attaques){
+            pokemon = pokedex.Pokedex[0].generations[i].pokemons.find(p => p.numPokedex === parseInt(req.params.id)).attaques;
+        }  
+    }
+    if (pokemon == "") return res.status(404).send('Le pokemon avec l\'ID donné n\'a pas été trouvé.');
     res.json(pokemon);
 }
 
 const getAttaqueByPokemonId = (req, res) => {
-    const pokemon = pokedex.Pokedex[0].generations[0].pokemons.find(p => p.numPokedex === parseInt(req.params.id))
-                    .attaques.find(p => p.nomAtt === parseInt(req.params.nom));
-
-    if (!pokemon) return res.status(404).send('Le pokemon ou attaque donné(e) n\'a pas été trouvé.');
+    let pokemon = "";
+    for(let i = 0; i < pokedex.Pokedex[0].generations.length; i++){
+        if(pokedex.Pokedex[0].generations[i].pokemons.find(p => p.numPokedex === parseInt(req.params.id)).attaques.find(p => p.nomAtt === parseInt(req.params.nom))){
+            pokemon = pokedex.Pokedex[0].generations[i].pokemons.find(p => p.numPokedex === parseInt(req.params.id)).attaques.find(p => p.nomAtt === parseInt(req.params.nom));
+        }  
+    }
+    if (pokemon == "") return res.status(404).send('Le pokemon avec l\'ID donné n\'a pas été trouvé.');
     res.json(pokemon);
 }
 
 const getTypeByPokemonId = (req, res) => {
-    const pokemon = pokedex.Pokedex[0].generations[0].pokemons.find(p => p.numPokedex === parseInt(req.params.id))
-                    .types.find(p => p.nomType === parseInt(req.params.nom));
-    if (!pokemon) return res.status(404).send('Le pokemon avec l\'ID donné n\'a pas été trouvé.');
+    let pokemon = "";
+    for(let i = 0; i < pokedex.Pokedex[0].generations.length; i++){
+        if(pokedex.Pokedex[0].generations[i].pokemons.find(p => p.numPokedex === parseInt(req.params.id)).types.find(p => p.nomType === parseInt(req.params.nom))){
+            pokemon = pokedex.Pokedex[0].generations[i].pokemons.find(p => p.numPokedex === parseInt(req.params.id)).types.find(p => p.nomType === parseInt(req.params.nom));
+        }  
+    }
+    if (pokemon == "") return res.status(404).send('Le pokemon avec l\'ID donné n\'a pas été trouvé.');
     res.json(pokemon);
 }
   
 const getCategoriesByPokemon = (req, res) => {
-    const pokemon = pokedex.Pokedex[0].generations[0].pokemons.find(p => p.numPokedex === parseInt(req.params.id)).categorie;
-    if (!pokemon) return res.status(404).send('Le pokemon avec l\'ID donné n\'a pas été trouvé.');
+    let pokemon = "";
+    for(let i = 0; i < pokedex.Pokedex[0].generations.length; i++){
+        if(pokedex.Pokedex[0].generations[i].pokemons.find(p => p.numPokedex === parseInt(req.params.id)).categorie){
+            pokemon = pokedex.Pokedex[0].generations[i].pokemons.find(p => p.numPokedex === parseInt(req.params.id)).categorie;
+        }  
+    }
+    if (pokemon == "") return res.status(404).send('Le pokemon avec l\'ID donné n\'a pas été trouvé.');
     res.json(pokemon);
 }
 
