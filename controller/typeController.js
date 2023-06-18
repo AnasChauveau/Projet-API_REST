@@ -19,6 +19,5 @@ const getType = (req, res) => {
 
 module.exports = { 
     getTypes,
-    getType,
-    getPokemonsByType
+    getType
 };
