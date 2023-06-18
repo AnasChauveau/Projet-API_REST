@@ -5,7 +5,7 @@ const getCategories = (req, res) => {
 }
 
 const getCategorie = (req, res) => {
-    const { nom } = req.params;
+    const nom = req.params.nom;
     const categorie = pokedex.Pokedex[0].categories.find(c => c.nomCat === nom);
 
     if (!categorie) {

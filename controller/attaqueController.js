@@ -5,7 +5,7 @@ const getAttaques = (req, res) => {
 }
 
 const getAttaque = (req, res) => {
-    const { nom } = req.params;
+    const nom = req.params.nom;
     const attack = pokedex.Pokedex[0].attaques.find(a => a.nomAtt === nom);
 
     if (!attack) {

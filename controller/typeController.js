@@ -5,7 +5,7 @@ const getTypes = (req, res) => {
 }
 
 const getType = (req, res) => {
-    const { nom } = req.params;
+    const nom = req.params.nom;
     const type = pokedex.Pokedex[0].types.find(t => t.nomType === nom);
 
     if (!type) {

@@ -17,7 +17,7 @@ const getGenerationByNom = (req, res) => {
 }
 
 const getPokemonsByGeneration = (req, res) => {
-    const { nom } = req.params;
+    const nom = req.params.nom;
     const generation = pokedex.Pokedex[0].generations.find(g => g.nomGen === nom).pokemons;
     if (!generation) {
         res.status(404).json({ message: `Génération non trouvée.` });
@@ -27,7 +27,7 @@ const getPokemonsByGeneration = (req, res) => {
 }
 
 const getPokemonByGeneration = (req, res) => {
-    const { nom } = req.params;
+    const nom = req.params.nom;
     const generation = pokedex.Pokedex[0].generations.find(g => g.nomGen === nom).pokemons.find(p => p.numPokedex === parseInt(req.params.id));
     if (!generation) {
         res.status(404).json({ message: `Génération ou pokemon non trouvée.` });
