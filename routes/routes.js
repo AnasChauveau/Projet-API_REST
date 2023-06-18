@@ -10,11 +10,11 @@ const router = express.Router();
 // Routes pour les Pokemons
 router.get('/pokemons', pokemonController.getAllPokemons);
 router.get('/pokemons/:id', pokemonController.getPokemonById);
-router.get('/pokemons/:id/attaques', pokemonController.getAttaquesByPokemon);
-router.get('/pokemons/:id/attaques/:nom', pokemonController.getAttaqueByPokemonId);
-router.get('/pokemons/:id/types', pokemonController.getTypesByPokemon);
-router.get('/pokemons/:id/types/:nom', pokemonController.getTypeByPokemonId);
-router.get('/pokemons/:id/categories', pokemonController.getCategoriesByPokemon);
+// router.get('/pokemons/:id/attaques', pokemonController.getAttaquesByPokemon);
+// router.get('/pokemons/:id/attaques/:nom', pokemonController.getAttaqueByPokemonId);
+// router.get('/pokemons/:id/types', pokemonController.getTypesByPokemon);
+// router.get('/pokemons/:id/types/:nom', pokemonController.getTypeByPokemonId);
+// router.get('/pokemons/:id/categories', pokemonController.getCategoriesByPokemon);
 
 
 // Routes pour les Generations
