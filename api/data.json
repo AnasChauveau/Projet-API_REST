@@ -3,7 +3,7 @@
     {
       "generations": [
         {
-          "nomGen": "Generation I",
+          "nomGen": "Generation 1",
           "region": "Kanto",
           "pokemons": [
             {
@@ -79,7 +79,7 @@
           ]
         },
         {
-          "nomGen": "Generation II",
+          "nomGen": "Generation 2",
           "region": "Johto",
           "pokemons": [
             {

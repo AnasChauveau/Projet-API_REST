@@ -4,8 +4,9 @@ const getGenerations = (req, res) => {
     res.status(200).json(pokedex.Pokedex[0].generations);
 }
 
-const getGeneration = (req, res) => {
-    const { nom } = decodeURI(req.params);
+const getGenerationByNom = (req, res) => {
+    const nom = req.params.nom;
+    console.log(nom);
     const generation = pokedex.Pokedex[0].generations.find(g => g.nomGen === nom);
 
     if (!generation) {
@@ -39,7 +40,7 @@ const getPokemonByGeneration = (req, res) => {
 module.exports =
 {
      getGenerations,
-     getGeneration,
+     getGenerationByNom,
      
      getPokemonsByGeneration,
      getPokemonByGeneration
