@@ -15,4 +15,10 @@ const getType = (req, res) => {
     }
 }
 
-module.exports = { getTypes, getType };
+
+
+module.exports = { 
+    getTypes,
+    getType,
+    getPokemonsByType
+};

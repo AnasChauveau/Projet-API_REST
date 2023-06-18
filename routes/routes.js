@@ -9,29 +9,39 @@ const router = express.Router();
 
 // Routes pour les Pokemons
 router.get('/pokemons', pokemonController.getAllPokemons);
-router.get('/pokemons/:id', pokemonController.getPokemonById);
+router.get('/pokemon/:id', pokemonController.getPokemonById);
+router.get('/pokemon/:id/attaques', pokemonController.getAttaquesByPokemon);
+router.get('/pokemon/:id/attaque/:nom', pokemonController.getAttaqueByPokemonId);
+router.get('/pokemon/:id/types', pokemonController.getTypesByPokemon);
+router.get('/pokemon/:id/types/:nom', pokemonController.getTypeByPokemonId);
+router.get('/pokemon/:id/categories', pokemonController.getCategoriesByPokemon);
+
+
 router.post('/pokemons', pokemonController.createPokemon);
-router.put('/pokemons/:id', pokemonController.updatePokemon);
-router.delete('/pokemons/:id', pokemonController.deletePokemon);
+router.put('/pokemon/:id', pokemonController.updatePokemon);
+router.delete('/pokemon/:id', pokemonController.deletePokemon);
+
 
 // Routes pour les Generations
 router.get('/generations', generationController.getGenerations);
-router.get('/generations/:nom', generationController.getGeneration);
+router.get('/generation/:nom', generationController.getGeneration);
+router.get('/generation/:nom/pokemons', generationController.getPokemonsByGeneration);
+router.get('/generation/:nom/pokemon/:id', generationController.getPokemonByGeneration);
 
 
 // Routes pour les Categories
 router.get('/categories', categorieController.getCategories);
-router.get('/categories/:nom', categorieController.getCategorie);
+router.get('/categorie/:nom', categorieController.getCategorie);
 
 
 // Routes pour les Types
 router.get('/types', typeController.getTypes);
-router.get('/types/:nom', typeController.getType);
+router.get('/type/:nom', typeController.getType);
 
 
 // Routes pour les Attaques
 router.get('/attaques', attaqueController.getAttaques);
-router.get('/attaques/:nom', attaqueController.getAttaque);
+router.get('/attaque/:nom', attaqueController.getAttaque);
 
 
 module.exports = router;
